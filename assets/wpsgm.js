@@ -1,8 +1,8 @@
 // Initialize Google Maps
 function initMap() {
-    const markerPosition = {lat: wpsgmVar.lat, lng: wpsgmVar.long};
+    const markerPosition = {lat: parseFloat(wpsgmVar.lat), lng: parseFloat(wpsgmVar.long)};
     const map = new google.maps.Map(document.getElementById("wpsgm"), {
-        zoom: wpsgmVar.zoom,
+        zoom: parseInt(wpsgmVar.zoom),
         center: markerPosition,
     });
     const marker = new google.maps.Marker({
