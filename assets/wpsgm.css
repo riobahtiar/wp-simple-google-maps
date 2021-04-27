@@ -1,4 +1,7 @@
 .wpsgm-widget {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
     height: 480px;
     width: 100%;
 }

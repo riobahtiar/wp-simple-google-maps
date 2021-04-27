@@ -1,0 +1,56 @@
+.wpsgm {
+    background: #c4c7ec;
+    padding: 5px 10px 15px 10px;
+    display: block;
+    width: 100%;
+}
+
+.wpsgm .copy-btn {
+    background: #6e62d6;
+    border-color: #6e62d6;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: none;
+    min-height: 30px;
+    padding: 0 10px;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+.wpsgm .tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.wpsgm .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.wpsgm .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.wpsgm .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}

@@ -40,7 +40,22 @@ class PluginSettings {
 				do_settings_sections( 'maps-admin' );
 				submit_button();
 				?>
+
             </form>
+
+            <div class="wpsgm">
+                <div class="widget-content">
+                    <h2>To enable Google Maps widget you need to include shorcode in your content editor.</h2>
+                    <input type="text" value="[wpsgm]" id="shorcodeInput" disabled>
+                    <div class="tooltip">
+                        <button class="copy-btn" onclick="copyShorcode()" onmouseout="tooltipHandler()">
+                            <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                            Copy Shorcode
+                        </button>
+                    </div>
+                </div>
+            </div>
+
         </div>
 	<?php }
 

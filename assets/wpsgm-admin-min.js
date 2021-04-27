@@ -1,0 +1,1 @@
+function copyShorcode(){var e=document.getElementById("shorcodeInput");e.disabled=!1,e.select(),e.setSelectionRange(0,99999),document.execCommand("copy"),document.getElementById("myTooltip").innerHTML="Copied: "+e.value,e.disabled=!0}function tooltipHandler(){document.getElementById("myTooltip").innerHTML="Copy to clipboard"}

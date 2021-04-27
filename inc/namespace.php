@@ -15,6 +15,7 @@ function init() {
 
 function check_requirements(): bool {
 
+	// Only php 7.2 or newer allowed
 	if ( version_compare( PHP_VERSION, '7.2', '<' ) ) {
 		if ( is_admin() && ! defined( 'DOING_AJAX' ) ) {
 			add_action( 'admin_notices', __NAMESPACE__ . '\\outdated_php_version_notice' );
@@ -28,7 +29,6 @@ function check_requirements(): bool {
 
 /**
  * Print an admin notice when the PHP version is not high enough.
- *
  */
 function outdated_php_version_notice() {
 	printf(
