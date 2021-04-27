@@ -36,3 +36,5 @@ function outdated_php_version_notice() {
 		PHP_VERSION
 	);
 }
+
+

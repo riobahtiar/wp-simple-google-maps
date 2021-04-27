@@ -31,7 +31,7 @@ class PluginSettings {
 		$this->maps_options = get_option( 'maps_options' ); ?>
 
         <div class="wrap">
-            <h1><?php _e( 'Google Maps General Settings', 'wp-simple-google-maps' ) ?></h1>
+            <h1><?php _e( 'Google Maps General Settings', 'wp-simple-google-maps' ); ?></h1>
 			<?php settings_errors(); ?>
 
             <form method="post" action="options.php">
@@ -45,12 +45,13 @@ class PluginSettings {
 
             <div class="wpsgm">
                 <div class="widget-content">
-                    <h2>To enable Google Maps widget you need to include shorcode in your content editor.</h2>
+                    <h2><?php _e( 'To enable Google Maps widget you need to include shorcode in your content editor.', 'wp-simple-google-maps' ); ?></h2>
                     <input type="text" value="[wpsgm]" id="shorcodeInput" disabled>
                     <div class="tooltip">
                         <button class="copy-btn" onclick="copyShorcode()" onmouseout="tooltipHandler()">
-                            <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
-                            Copy Shorcode
+                            <span class="tooltiptext"
+                                  id="myTooltip"><?php _e( 'Copy to clipboard', 'wp-simple-google-maps' ); ?></span>
+							<?php _e( 'Copy Shorcode', 'wp-simple-google-maps' ); ?>
                         </button>
                     </div>
                 </div>
