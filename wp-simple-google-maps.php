@@ -13,3 +13,15 @@
  */
 
 defined( 'ABSPATH' ) || exit;
+
+define( 'WPSGM__PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
+define( 'WPSGM__PLUGIN_URL', plugins_url( '/', __FILE__ ) );
+
+require_once WPSGM__PLUGIN_DIR . 'inc/class-assets.php';
+require_once WPSGM__PLUGIN_DIR . 'inc/class-plugin-settings.php';
+require_once WPSGM__PLUGIN_DIR . 'inc/class-shorcode.php';
+require_once WPSGM__PLUGIN_DIR . 'inc/namespace.php';
+
+
+// Load Plugin
+WPSGM\init();

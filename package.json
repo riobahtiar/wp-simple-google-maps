@@ -1,0 +1,27 @@
+{
+  "name": "wp-simple-google-maps",
+  "version": "0.0.1",
+  "description": "WP Simple Google Maps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riobahtiar/wp-simple-google-maps.git"
+  },
+  "keywords": [
+    "gulp",
+    "wordpress-plugin"
+  ],
+  "author": "Rio Bahtiar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/riobahtiar/wp-simple-google-maps/issues"
+  },
+  "homepage": "https://github.com/riobahtiar/wp-simple-google-maps#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-minify": "^3.1.0"
+  }
+}

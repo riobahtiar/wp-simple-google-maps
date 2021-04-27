@@ -1,0 +1,1 @@
+function initMap(){const o={lat:wpsgmVar.lat,lng:wpsgmVar.long},n=new google.maps.Map(document.getElementById("wpsgm"),{zoom:wpsgmVar.zoom,center:o});new google.maps.Marker({position:o,map:n})}
